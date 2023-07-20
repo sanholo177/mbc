@@ -1,0 +1,587 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>myBuild Compare</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="css/uniform.default.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="head-banner">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="head-wrap">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <div class="logo">
+                                    <figure>
+                                        <img src="img/logo.png">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                      <div class="navbar-header">
+                                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#my-modal" aria-expanded="false">-->
+                                        <button class="navbar-toggle collapsed">
+                                          <span class="sr-only">Toggle navigation</span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                        </button>
+                                      </div>
+                                      <div class="collapse navbar-collapse hidden-sm" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                          <li class="active"><a href="#">Explore<span class="sr-only">(current)</span></a></li>
+                                          <li><a href="#">How it works</a></li>
+                                          <li><a href="#">Your Stories</a></li>
+                                          <li><a href="#">Articles</a></li>
+                                          <li><a href="#">Contact us</a></li>
+                                          <li><a class="login" href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                          <li><a class="btn btn-primary" href="#">Join Now</a></li>
+                                        </ul>
+                                      </div><!-- /.navbar-collapse -->
+                                      <div id="my-modal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="my-modal-label">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <figure id="my-modal-label">
+                                                        <img src="img/logo.png" alt="">
+                                                    </figure>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                      <ul class="nav navbar-nav">
+                                                        <li><a class="btn btn-primary" href="#">Join Now</a></li>
+                                                        <li><a class="login" href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                                        <li class="active"><a href="#">Explore<span class="sr-only">(current)</span></a></li>
+                                                        <li><a href="#">How it works</a></li>
+                                                        <li><a href="#">Your Stories</a></li>
+                                                        <li><a href="#">Articles</a></li>
+                                                        <li><a href="#">Contact us</a></li>
+                                                      </ul>
+                                                        <div class="visible-sm visible-xs follow-myb">
+                                                            <h5>Follow myBuild</h5>
+                                                            <ul>
+                                                                <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                                <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.navbar-collapse -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><!-- /.container-fluid -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="banner">
+                <div class="caption">
+                    <h2>Explore and compare new homes<br> built by Australia's best.</h2>
+                    <div class="banner-form">
+                        <form class="form-inline">
+                            <div class="form-group">
+                              <input type="number" name="quantity" min="1" max="5" placeholder="Project home"> 
+                           </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search by region, postcode or suburb ">
+                              <button type="submit" class="btn btn-primary for-mbl visible-sm visible-xs"><i class="fa fa-search"></i></button>
+                            </div>
+                            <button type="submit" class="btn btn-primary hidden-sm hidden-xs">SEARCH</button>
+                            <a href="#" class="no-bg" data-toggle="modal" data-target="#form-modal">More Options</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="bounce">
+                    <a class="drag-down" href="#down"></a>
+                </div>
+                <img class="banner-img" src="img/home.jpg" alt="">
+            </div>
+        </section>
+        <section class="modal-view">
+            <div class="modal fade in" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-label">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="my-modal-label"></h4>
+                </div>
+                <div class="modal-body">
+                 <form class="form-inline">
+                     <div class="group-one">
+                         <div class="form-group">
+                           <input type="number" name="quantity" min="1" max="5">
+                         </div>
+                         <div class="form-group">
+                           <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search by region, postcode or suburb ">
+                         </div>
+                         <button type="submit" class="btn btn-primary">SEARCH</button>
+                     </div>
+                     <div class="group-two">
+                         <div class="part-one">
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="how-much">
+                                    <h4>How much</h4>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <span>to</span>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="room-specs">
+                                    <h4>How many</h4>
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                       <div class="form-group">
+                                           <input type="number" name="quantity" min="1" max="5">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                       <div class="form-group">
+                                           <input type="number" name="quantity" min="1" max="5">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                       <div class="form-group">
+                                           <input type="number" name="quantity" min="1" max="5">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                       <div class="form-group">
+                                           <input type="number" name="quantity" min="1" max="5">
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="col-lg-12 col-md-12">
+                            <div class="how-size">
+                                <h4>How big?</h4>
+                                <div class="col-lg-4">
+                                    <div class="b-width">
+                                        <h5>BLOCK WIDTH(m)</h5>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                        <span>to</span>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="b-length">
+                                        <h5>BLOCK LENGTH(m)</h5>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                        <span>to</span>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="b-length">
+                                        <h5>HOUSE SIZE(Squares)</h5>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                        <span>to</span>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="5">
+                                        </div>
+                                    </div>
+                               </div>
+                         </div>
+                        </div>
+                         <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <div class="must-haves">
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      Alfresco
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      Blunders Pantry
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      Home theatre
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      kitchen pantry
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      Rear master bedroom
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="">
+                                      Separate toilet
+                                    </label>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Less options<i class="fa fa-minus"></i></span></button>
+                 </form>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+        <section class="login-modal-view">
+            <div class="modal fade in" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-label-form">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="my-modal-label"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="login-modal-block">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="login-form-wrap">
+                                <h2>Login</h2>
+                                <div class="social-logins">
+                                    <a href="#"><i class="fa fa-facebook"></i>Login using Facebook</a>
+                                    <a href="#"><i class="fa fa-google-plus"></i>Login using Google+</a>
+                                </div>
+                                <span>or</span>
+                                <div class="login-form">
+                                    <form class="form-horizontal">
+                                      <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email*">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password*">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <a href="#" class="no-bg">Forgot your password?</a>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <button type="submit" class="btn btn-default">LOGIN</button>
+                                        </div>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-modal-block">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="not-member">
+                                <h2>Not a member?</h2>
+                                <p>Why you should join MyBuild</p>
+                                <ul>
+                                    <li>Save your searches</li>
+                                    <li>Add homes to a list of your favourites</li>
+                                    <li>Use our comparison tool</li>
+                                    <li>Best of all - it's free!</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">JOIN NOW</a>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+        <section class="how-works" id="down">
+            <div class="container">
+                <div class="row">
+                    <h3>How it works</h3>
+                    <div class="blocks">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="how-search">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/search@2x.png" alt="">
+                                    </a>
+                                </figure>
+                                <p><a href="">Search</a> for builders, house plans, ideas and inspiration</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="how-compare">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/compare@2x.png" alt="">
+                                    </a>
+                                </figure>
+                                <p><a href="">Compare</a> builder designs and inclusions side by side</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="how-build">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/build@2x.png" alt="">
+                                    </a>
+                                </figure>
+                                <p><a href="">Build</a> your perfect dream home at your desired budget</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-default" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advice-email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="need-advice">
+                            <h3>Need some help or advice?</h3>
+                            <div class="adv-wrap">
+                                <figure>
+                                    <img src="img/need.jpg" alt="">
+                                </figure>
+                                <div class="cont-wrap">
+                                    <h4>How to: Pick properties to subdivide for profit</h4>
+                                    <p>The process of buying a large block of land, splitting it and selling for profit 
+                                       sounds pretty simple, but the reality is a little more complicated. Here’s our 
+                                       guide to buying for subdivision....<a href="#" class="no-bg">Read more</a></p>
+                                </div>
+                            </div>
+                            <div class="adv-wrap">
+                                <figure>
+                                    <img src="img/trade.jpg" alt="">
+                                </figure>
+                                <div class="cont-wrap">
+                                    <h4>How to treat your tradies</h4>
+                                    <p>Our interiors and home staging expert Naomi Findlay shares some tips on how to 
+                                       treat your tradies.... <a href="#" class="no-bg">Read more</a></p>
+                                </div>
+                            </div>
+                            <a class="btn btn-default">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 over-cont">
+                        <div class="subs-box">
+                            <div class="wrap-box">
+                                <div class="sub-text">
+                                    <h3>Building help & tips straight to your inbox</h3>
+                                    <p>Tips how-to guides on getting started when building a house, from small DIY projects to large 
+                                       renovations, home extensions and building your home from the ground up.</p>
+                                </div>
+                                <div class="form-subs">    
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Enter email address">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-default">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="stories">
+            <div class="container">
+                <div class="row">
+                    <h3>Your stories</h3>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="story">
+                            <figure>
+                                <img src="img/story.jpg">
+                            </figure>
+                            <div class="storydemo">
+                                <h4>Brad & Angelina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                                    Proin gravida dolor sit amet lacus accumsan et viverra... <a href="#" class="no-bg">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="story">
+                            <figure>
+                                <img src="img/story1.jpg">
+                            </figure>
+                            <div class="storydemo">
+                                <h4>Brad & Angelina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                                    Proin gravida dolor sit amet lacus accumsan et viverra... <a href="#" class="no-bg">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="story">
+                            <figure>
+                                <img src="img/story2.jpg">
+                            </figure>
+                            <div class="storydemo">
+                                <h4>Brad & Angelina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                                    Proin gravida dolor sit amet lacus accumsan et viverra... <a href="#" class="no-bg">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="safe-hands">
+            <div class="container">
+                <div class="row">
+                    <h3>You're in safe hands</h3>
+                    <ul>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo1.png'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo2.png'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo3.png'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo4.png'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo5.png'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='img/logo6.png'>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="top-footer">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="footer-list explore">
+                                <h4>Explore</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-list explore">
+                                <h4>How it works</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="footer-list yStories">
+                                <h4>Your Stories</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-list article">
+                                <h4>Articles</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-3">
+                            <div class="footer-contact">
+                                <h4>Contact us</h4>
+                                <div class="c-detail">
+                                    <p>Call us <a href="tel: 0299999999">02 9999 9999</a></p>
+                                    <p>Open Monday to Friday, 8am to 5:30pm</p>
+                                </div>
+                                <ul>
+                                    <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="c-right">
+                                <p>&copy; My Build Ltd 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="menu-bottom">
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="//siteclicks.sharepoint.com///ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.uniform.min.js"></script>
+        <script>
+           $(":checkbox").uniform({checkedClass: 'checked'});
+        </

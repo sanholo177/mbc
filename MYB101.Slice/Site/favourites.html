@@ -1,0 +1,861 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>myBuild Compare</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="css/uniform.default.css">
+        <link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css">
+        <link type="text/css" rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="head-banner no-banner">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="head-wrap">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <div class="logo">
+                                    <figure>
+                                        <img src="img/logo.png">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                      <div class="navbar-header">
+                                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#myModal" aria-expanded="false">-->
+                                        <button class="navbar-toggle collapsed">
+                                          <span class="sr-only">Toggle navigation</span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                        </button>
+                                      </div>
+                                      <div class="collapse navbar-collapse hidden-sm" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                          <li class="active"><a href="#">Explore<span class="sr-only">(current)</span></a></li>
+                                          <li><a href="#">How it works</a></li>
+                                          <li><a href="#">Your Stories</a></li>
+                                          <li><a href="#">Articles</a></li>
+                                          <li><a href="#">Contact us</a></li>
+                                          <li class="favs new-items"><a href="#"></a></li>
+                                          <li class="saved new-items"><a href="#"></a></li>
+                                          <li class="profile new-items"><a href="#"></a></li>
+                                        </ul>
+                                      </div><!-- /.navbar-collapse -->
+                                      <div id="my-modal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="my-modal-label">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <figure id="my-modal-label">
+                                                        <img src="img/logo.png" alt="">
+                                                    </figure>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                      <ul class="nav navbar-nav">
+                                                        <li><a class="btn btn-primary" href="#">Join Now</a></li>
+                                                        <li><a class="login" href="#">Login</a></li>
+                                                        <li class="active"><a href="#">Explore<span class="sr-only">(current)</span></a></li>
+                                                        <li><a href="#">How it works</a></li>
+                                                        <li><a href="#">Your Stories</a></li>
+                                                        <li><a href="#">Articles</a></li>
+                                                        <li><a href="#">Contact us</a></li>
+                                                      </ul>
+                                                        <div class="visible-sm visible-xs follow-myb">
+                                                            <h5>Follow myBuild</h5>
+                                                            <ul>
+                                                                <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                                <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.navbar-collapse -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><!-- /.container-fluid -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section class="searched-saved">
+            <div class="container">
+                <div class="result-info">
+                    <h1><span>999</span> results returned to favourites</h1>
+                    <a href="#" class="btn btn-default visible-xs">REFINE</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 col-xs-12 hidden-xs">
+                        <div class="refine-search">
+                            <h2>Refine favourites</h2>
+                            <form class="form-inline">
+                              <div class="form-group">
+                                 <input type="text" class="form-control">
+                              </div>
+                              <button type="submit" class="btn btn-default">APPLY</button>
+                                  <div class="group-two">
+                                    <div class="part-one">
+                                        <div class="how-much">
+                                            <h4>How much</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <span>to</span>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="room-specs">
+                                        <h4>How many</h4>
+                                           <div class="form-group">
+                                               <input type="number" name="quantity" min="1" max="5" placeholder="Bedrooms">
+                                           </div>
+                                           <div class="form-group">
+                                               <input type="number" name="quantity" min="1" max="5" placeholder="Bathrooms">
+                                           </div>
+                                           <div class="form-group">
+                                               <input type="number" name="quantity" min="1" max="5" placeholder="Garage spaces">
+                                           </div>
+                                           <div class="form-group">
+                                               <input type="number" name="quantity" min="1" max="5" placeholder="Storeys">
+                                           </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12 col-md-12">
+                                        <div class="how-size">
+                                            <h4>How big?</h4>
+                                            <div class="b-width">
+                                                <h5>BLOCK WIDTH(m)</h5>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="0.0m">
+                                                </div>
+                                                <span>to</span>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="99.9m">
+                                                </div>
+                                            </div>
+                                            <div class="b-length">
+                                                <h5>BLOCK LENGTH(m)</h5>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="0.0m">
+                                                </div>
+                                                <span>to</span>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="99.9m">
+                                                </div>
+                                            </div>
+                                            <div class="b-length">
+                                                <h5>HOUSE SIZE(Squares)</h5>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="0.0m">
+                                                </div>
+                                                <span>to</span>
+                                                <div class="form-group">
+                                                    <input type="number" name="quantity" min="0.0m" max="99.9m" placeholder="99.9m">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12 col-sm-12 col-xs-12">
+                                        <div class="must-haves">
+                                            <h4>Must haves</h4>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  Alfresco
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  Blunders Pantry
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  Home theatre
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  kitchen pantry
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  Rear master bedroom
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox" value="">
+                                                  Separate toilet
+                                                </label>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div class="col-lg-12">
+                                        <div class="whats-included">
+                                            <h4>What's included?</h4>
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading-one">
+                                                    <h5 class="panel-title">
+                                                      <a class="default-open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                                                        KITCHEN
+                                                      </a>
+                                                    </h5>
+                                                  </div>
+                                                  <div id="collapse-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-one">
+                                                    <div class="panel-body">
+                                                       <div class="must-haves">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Alfresco
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Blunders Pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Home theatre
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  kitchen pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Rear master bedroom
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Separate toilet
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading-two">
+                                                    <h5 class="panel-title">
+                                                      <a class="collapsed default-open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+                                                        [FILTER GROUP NAME]
+                                                      </a>
+                                                    </h5>
+                                                  </div>
+                                                  <div id="collapse-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-two">
+                                                    <div class="panel-body">
+                                                      <div class="must-haves">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Alfresco
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Blunders Pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Home theatre
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  kitchen pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Rear master bedroom
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Separate toilet
+                                                                </label>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading-three">
+                                                    <h5 class="panel-title">
+                                                      <a class="collapsed default-open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+                                                        [FILTER GROUP NAME]
+                                                      </a>
+                                                    </h5>
+                                                  </div>
+                                                  <div id="collapse-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-three">
+                                                    <div class="panel-body">
+                                                      <div class="must-haves">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Alfresco
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Blunders Pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Home theatre
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  kitchen pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Rear master bedroom
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Separate toilet
+                                                                </label>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading-four">
+                                                    <h5 class="panel-title">
+                                                      <a class="collapsed default-open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-four" aria-expanded="false" aria-controls="collapse-four">
+                                                        [FILTER GROUP NAME]
+                                                      </a>
+                                                    </h5>
+                                                  </div>
+                                                  <div id="collapse-four" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-four">
+                                                    <div class="panel-body">
+                                                      <div class="must-haves">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Alfresco
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Blunders Pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Home theatre
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  kitchen pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Rear master bedroom
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Separate toilet
+                                                                </label>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading-five">
+                                                    <h5 class="panel-title">
+                                                      <a class="collapsed default-open" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-five" aria-expanded="false" aria-controls="collapse-five">
+                                                        [FILTER GROUP NAME]
+                                                      </a>
+                                                    </h5>
+                                                  </div>
+                                                  <div id="collapse-five" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-five">
+                                                    <div class="panel-body">
+                                                      <div class="must-haves">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Alfresco
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Blunders Pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Home theatre
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  kitchen pantry
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Rear master bedroom
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                  <input type="checkbox" value="">
+                                                                  Separate toilet
+                                                                </label>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                     </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-xs-12">
+                        <div class="row">
+                            <div class="wrap-search-items">
+                                <div class="title-sort hidden-xs">
+                                    <div class="sort-block">
+                                        <h4>Sort by</h4>
+                                        <div class="form-group">
+                                            <input type="number" name="quantity" min="1" max="99" placeholder="Newest">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <div class="image-slider">
+                                              <ul class="bxslider">
+                                                <li><img src="img/slider-one.jpg" /></li>
+                                                <li><img src="img/standard.jpg" /></li>
+                                                <li><img src="img/home.jpg" /></li>
+                                              </ul>
+                                            </div>
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <img src="img/slider-one.jpg" alt="">
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <div class="image-slider">
+                                              <ul class="bxslider">
+                                                <li><img src="img/slider-one.jpg" /></li>
+                                                <li><img src="img/standard.jpg" /></li>
+                                                <li><img src="img/home.jpg" /></li>
+                                              </ul>
+                                            </div>
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <img src="img/slider-one.jpg" alt="">
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <div class="image-slider">
+                                              <ul class="bxslider">
+                                                <li><img src="img/slider-one.jpg" /></li>
+                                                <li><img src="img/standard.jpg" /></li>
+                                                <li><img src="img/home.jpg" /></li>
+                                              </ul>
+                                            </div>
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <img src="img/slider-one.jpg" alt="">
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <div class="image-slider">
+                                              <ul class="bxslider">
+                                                <li><img src="img/slider-one.jpg" /></li>
+                                                <li><img src="img/standard.jpg" /></li>
+                                                <li><img src="img/home.jpg" /></li>
+                                              </ul>
+                                            </div>
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="compare-block">
+                                        <figure>
+                                            <img src="img/slider-one.jpg" alt="">
+                                        </figure>
+                                        <div class="c-wrap">
+                                            <ul>
+                                                <li>9 bed</li>
+                                                <li>3 baths</li>
+                                                <li>2 garage</li>
+                                            </ul>
+                                            <div class="c-detail">
+                                                <h4>House name over two lines lorem ipsum dolor sit</h4>
+                                                <span>Sydney, NSW, 2000</span>
+                                            </div>
+                                            <h4>From $999,999</h4>
+                                        </div>
+                                        <div class="compare-feature">
+                                            <ul>
+                                                <li><a href="#"><span>SAVE</span></a></li>
+                                                <li><a href="#"><span>COMPARE</span></a></li>
+                                                <li><a href="#"><span>ENQUIRE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-wrap">
+                    <nav>
+                        <ul class="pagination">
+                          <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">...</a></li>
+                          <li><a href="#">99</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="looking-for">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="enq-now">
+                            <h3>Can't find what you are looking for?</h3>
+                            <p>Talk to us about building a custom home lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <a class="btn btn-default" href="#">ENQUIRE NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="top-footer">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="footer-list explore">
+                                <h4>Explore</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-list explore">
+                                <h4>How it works</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="footer-list yStories">
+                                <h4>Your Stories</h4>
+                                <ul>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-list article">
+                                <h4>Articles</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-3">
+                            <div class="footer-contact">
+                                <h4>Contact us</h4>
+                                <div class="c-detail">
+                                    <p>Call us <a href="tel: 0299999999">02 9999 9999</a></p>
+                                    <p>Open Monday to Friday, 8am to 5:30pm</p>
+                                </div>
+                                <ul>
+                                    <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="c-right">
+                                <p>&copy; My Build Ltd 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="menu-bottom">
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="//siteclicks.sharepoint.com///ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.uniform.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script>
+           $(":checkbox").uniform({checkedClass: 'checked'});
+        </script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script>
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager',
+                adaptiveHeight: true,
+                mode: 'fade',
+                controls: true,
+                options: 'fade',
+                touchEnabled: true
+                
+            });
+            
+            $('#bx-pager').bxSlider({
+                minSlides: 4,
+                maxSlides: 4,
+                slideWidth: 218,
+                slideMargin: 10  
+            });
+        </
